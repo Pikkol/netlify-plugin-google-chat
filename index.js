@@ -26,7 +26,16 @@ export const onPreBuild = ({ constants, utils }) => {
 
 export const onSuccess = ({ constants }) => {
   try {
-    const text = `Build started at ${new Date()}`;
+    const text = `Build finished at ${new Date()}`;
+    sendGoogleChatMessage(text);
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+export const onError = ({ constants }) => {
+  try {
+    const text = `Build failed at ${new Date()}`;
     sendGoogleChatMessage(text);
   } catch (error) {
     console.log(error);
