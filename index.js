@@ -1,8 +1,6 @@
-import fetch from "node-fetch";
-
 const sendGoogleChatMessage = text => {
   const webhookURL = process.env.NETLIFY_GOOGLE_CHAT_WEBHOOK;
-
+  const fetch = require("node-fetch");
   const data = JSON.stringify({
     text,
   });

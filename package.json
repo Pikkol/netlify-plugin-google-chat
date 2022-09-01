@@ -1,9 +1,8 @@
 {
   "name": "netlify-plugin-google-chat",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A Netlify plugin to automatically update Google chat on Prebuild, Build Success, Build Error",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
